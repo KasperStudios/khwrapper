@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "khwrapper",
+  "version": "${version}",
+  "name": "KHWrapper",
+  "description": "Platform mediation layer for KasHub, providing cross-platform abstractions for Minecraft loaders.",
+  "authors": [
+    "KasperStudios"
+  ],
+  "contact": {
+    "homepage": "https://github.com/KasperStudios/KHWrapper",
+    "sources": "https://github.com/KasperStudios/KHWrapper"
+  },
+  "license": "MIT",
+  "icon": "assets/khwrapper/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.kasperstudios.khwrapper.fabric.KHWrapperFabric"
+    ],
+    "client": [
+      "com.kasperstudios.khwrapper.fabric.client.KHWrapperFabricClient"
+    ]
+  },
+  "mixins": [
+    "khwrapper.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ">=1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
